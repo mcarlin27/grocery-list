@@ -10,12 +10,20 @@ $(Document).ready(function(){
     var eggplant = ($("input:radio[name=egglplant]:checked").val());
     var okra = ($("input:radio[name=okra]:checked").val());
     var sweet = ($("input:radio[name=sweet]:checked").val());
-    var ice-cream = ($("input#ice-cream").val());
+    var iceCream = ($("input#ice-cream").val());
     var bread = ($("input#bread").val());
 
-    var userInput = [milk, nuts, collards, kale, corn, eggplant, okra, sweet, ice-cream, bread];
+    var userInput = [milk, nuts, collards, kale, corn, eggplant, okra, sweet, iceCream, bread];
+    userInput.sort();
 
-    $("#result").append(userInput);
+    // var groceries = userInput.map(function(grocery) {
+    //   return grocery.toUpperCase();
+    // });
+
+    $("form#list").hide();
+    $("#result").show();
+    $("#grocery-list").append(groceries);
+
 
   });
 });

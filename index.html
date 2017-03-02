@@ -14,82 +14,18 @@
         <p>Tell us what groceries you need to buy.</p>
       </div>
       <form id="list">
-        <label for="milk">What type of milk do you drink?</label>
-        <select id="milk">
-          <option>Whole milk</option>
-          <option>2%</option>
-          <option>Chocolate milk</option>
-          <option>Almond milk</option>
-        </select>
-        <br><br>
-        <label for="nuts">What kind of nuts would you buy?</label>
-        <select id="nuts">
-          <option>Almonds</option>
-          <option>Pistachios</option>
-          <option>Cashews</option>
-          <option>Walnuts</option>
-        </select>
-        <br><br>
-        <p><strong>What veggies do you buy (select all that apply)?</strong></p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="collards" checked>
-            Collard Greens
-          </label>
+        <div class="form-group">
+          <label for="grocery">Item:</label>
+          <input type="text" class="form-control" id="groceryItem" placeholder="Enter item">
+          <button type="button" class="btn btn-default btn-md">Add</button>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="kale">
-            Kale
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="corn">
-            Corn
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="eggplant">
-            Eggplant
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="okra">
-            Okra
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="sweet">
-            Sweet Potatoes
-          </label>
-        </div>
-        <br>
-        <label for="ice-cream">What kind of ice cream do you get?</label>
-        <select id="ice-cream">
-          <option>Chocolate</option>
-          <option>Bourbon Vanilla</option>
-          <option>Pistachio</option>
-          <option>Coffee</option>
-        </select>
-        <br><br>
-        <label for="bread">What type of bread do you like?</label>
-        <select id="bread">
-          <option>Cinnamon raisin</option>
-          <option>Thin-sliced</option>
-          <option>Whole wheat</option>
-          <option>Multi-grain</option>
-        </select>
-        <br><br>
         <button type="submit" class="btn btn-default btn-lg">Show me my list!</button>
       </form>
       <div id="result">
         <p>Here is your grocery list!</p>
         <ul id="grocery-list">
         </ul>
+      </div>
     </div>
   </body>
 </html>
